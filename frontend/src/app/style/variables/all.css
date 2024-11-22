@@ -1,0 +1,10 @@
+@import './vars/colors.css';
+@import './vars/effects.css';
+@import './vars/animation.css';
+
+
+
+.var {
+  composes: color-vars, anim-vars, effects-vars;
+  --maxWidth: calc(100vw - 10%);
+}

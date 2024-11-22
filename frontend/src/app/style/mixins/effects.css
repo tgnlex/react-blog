@@ -1,0 +1,10 @@
+@import '../variables/effects.css';
+
+.fx-shadow {
+  box-shadow: var(--shadow-basic);
+}
+
+.v-scroll {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}

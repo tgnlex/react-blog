@@ -1,0 +1,15 @@
+:root {
+  --root-max-w: 1280px;
+  --root-margin: 0 auto;
+  --root-pad: 2rem;
+}
+
+#root {
+  max-width: var(--root-max-w);
+  margin: var(--root-margin);
+  padding: var(--root-pad);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

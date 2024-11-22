@@ -1,0 +1,21 @@
+@import '../lib.css';
+.vars {
+  composes: var; 
+  --card-mb: 25vh;
+
+}
+
+.card {
+  composes: vars;
+  padding: var(--pad);
+  border: 2px solid var(--border-color);
+  margin-bottom: var(--card-mb);
+}
+
+.item {
+  composes: vars;  
+  --item-bg: var(--rgb-black);
+  background-color: var(--item-bg);
+  border-radius: 5px;
+
+}

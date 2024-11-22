@@ -1,0 +1,12 @@
+.center-inline {
+    max-width: fit-content;
+    margin-inline: auto;
+}
+
+.center-fixed {
+  position: fixed;
+  inset: 0px;
+  max-width: 100vw;
+  max-height: 100vh; 
+  margin: auto;
+}
