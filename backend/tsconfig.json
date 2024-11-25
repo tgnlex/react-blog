@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "es6",
+        "noImplicitAny": false,
+        "moduleResolution": "node",
+        "sourceMap": false,
+        "noEmit": true,
+        "allowImportingTsExtensions": true,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "*": ["node_modules/*"],
+            "@/*": ["./src/*"],
+            "config/*": ["./src/config/*"],
+            "db/*": ["./src/db/*"],
+            "lib/*": ["./src/lib/*"],
+            "server/*": ["./src/server/*"],
+            "types/*": ["./src/types/*"],
+            "utils/*": ["./src/utils/*"],
+            "vars/*": ["src/lib/vars/*"],
+            "controllers/*": ["./src/server/controllers/*"]
+
+        }
+    },
+    "include": [
+        "src/**/*"
+    ]
+}
