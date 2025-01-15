@@ -1,0 +1,16 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border: 4px solid white;
+  padding: 0 2em 0 2em;
+}
+
+.heading {
+  text-decoration: none;
+  font-size: 3.4em;
+  line-height: 1;
+  font-weight: 600;
+}
