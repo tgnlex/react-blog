@@ -1,7 +1,7 @@
 import {List} from "../components/styled/lists"
 import styles from "./css/navbar.module.css";
 import routes from "../../library/routes";
-import Link from "../components/link";
+import Link from "../components/atomic/items/link";
 function Navbar() {
   return (
     <nav className={styles.navbar}>

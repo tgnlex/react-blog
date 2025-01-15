@@ -1,14 +1,12 @@
-import styles from "./layout.module.css";
-interface LayoutProps {
-  children?: any;
-}
+import Header from "./header";
+import Navbar from "./navbar";
+type Props = { children?: any };
 
-function Layout(props: LayoutProps) {
+function Layout(props: Props) {
   return (
     <>
-      <header className={styles.header}>
-        <h1 className={styles.heading}>React Blog</h1>
-      </header>
+      <Header />
+      <Navbar />
       {props.children}
     </>
   )

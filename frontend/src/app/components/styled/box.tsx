@@ -1,4 +1,4 @@
-import { DEFAULT } from "../../../library/css/constants";
+import { DEFAULT_SIZE } from "../../../library/css/constants";
 import styled from "styled-components";
 type BoxProps = {
   width?: string | number;
@@ -8,11 +8,9 @@ type BoxProps = {
 
 }
 const Box = styled.div<BoxProps>`
-  --default: 1em;
-  --width: ${props => props.width || props.size || DEFAULT}
-  --height: ${props => props.height || props.size || DEFAULT}
-  width: var(--width);
-  height: var(--height);
+  --default-size: 1em;
+  width: ${props => props.width || props.size || DEFAULT_SIZE}
+  height: ${props => props.height || props.size || DEFAULT_SIZE}
 `;
 
 export default Box;
