@@ -1,18 +1,16 @@
-interface ItemProps {
-  href: string;
-  text: string;
-  class?: string;
-  style?: any;
-}
-function Link (props: ItemProps) {
-  const item = props.class || "item"
-  let styles: any = {};
-  if (props.style) styles = props.style;
+import Item from "./styled/item";
 
+type Props = { href: string; text: string; css?: string; class?: string; };
+let item: string = "item"
+let styles: any = {};
+
+function Link (props: Props) {
+  if (props.class) item = props.class;
+  if (props.css) styles = props.css;
   return (
-    <li style={styles} className={item}>
-        <a href={props.href}>{props.text}</a>
-    </li>
+    <Item style={styles} className={item}>
+        <a className="link" href={props.href}>{props.text}</a>
+    </Item>
   )
 };
 
