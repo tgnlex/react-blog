@@ -1,7 +1,7 @@
-import { CardHead } from "../../../components/parts";
-import { Menu } from "../../../components/styled/lists";
-import Card from "../../../components/styled/card";
-import Link from "../../../components/atomic/items/link.tsx";
+import { CardHead } from "@@/components/cards/parts";
+import { Menu } from "@/app/ui/lists";
+import Card from "@/app/ui/card";
+import Link from "@@/components/atoms/items/link.tsx";
 function MenuCard() {
   return (
     <Card className="menu--card">

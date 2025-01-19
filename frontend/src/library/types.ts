@@ -1,4 +1,7 @@
 type Pad = string | number;
 
-
-export type { Pad }
+type Route = {
+  href: string;
+  text: string;
+};
+export type { Route, Pad }

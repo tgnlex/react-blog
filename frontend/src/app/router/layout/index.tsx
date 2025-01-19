@@ -1,13 +1,15 @@
+import { Outlet } from "react-router";
 import Header from "./header";
 import Navbar from "./navbar";
-type Props = { children?: any };
 
-function Layout(props: Props) {
+function Layout() {
   return (
     <>
       <Header />
       <Navbar />
-      {props.children}
+      <div id="outlet">
+        <Outlet />
+      </div>
     </>
   )
 };

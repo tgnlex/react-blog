@@ -1,14 +1,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router';
-import {Home, Blog} from './pages';
+import {Home, Blog, About} from './pages';
 import Layout from './layout';
 
 function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout/>}>
-          <Route index path="/" element={<Home/>} />
+        <Route path="/" element={<Layout/>}>
+          <Route index element={<Home/>} />
           <Route path="/blog" element={<Blog/>} />
+          <Route path="/about" element={<About/>} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,4 +1,4 @@
-import Item from "../../styled/item";
+import ListItem from "../../styled/item";
 
 type Props = { href: string; text: string; css?: string; class?: string; };
 let item: string = "item"
@@ -8,9 +8,9 @@ function Link (props: Props) {
   if (props.class) item = props.class;
   if (props.css) css = props.css;
   return (
-    <Item style={css} className={item}>
+    <ListItem link style={css} className={item}>
         <a className="link" href={props.href}>{props.text}</a>
-    </Item>
+    </ListItem>
   )
 };
 
