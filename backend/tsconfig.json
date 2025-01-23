@@ -16,11 +16,11 @@
             "@/*": ["./src/*"],
             "config/*": ["./src/config/*"],
             "db/*": ["./src/db/*"],
-            "lib/*": ["./src/lib/*"],
+            "lib/*": ["src/library/*"],
             "server/*": ["./src/server/*"],
             "types/*": ["./src/types/*"],
             "utils/*": ["./src/utils/*"],
-            "vars/*": ["src/lib/vars/*"],
+            "vars/*": ["src/library/vars/*"],
             "controllers/*": ["./src/server/controllers/*"]
 
         }

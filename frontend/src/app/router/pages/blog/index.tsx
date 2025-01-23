@@ -1,13 +1,14 @@
-
+import Page from "@/app/components/basic/page";
+import { List } from "@@/ui";
 
 
 function BlogPage() {
   return (
-    <main>
-        <ul className={"posts"}>
+    <Page id="blog" heading="Recent Posts">
+      <List className={"posts"}>
           
-        </ul>
-    </main>
+      </List>
+    </Page>
   )
 };
 

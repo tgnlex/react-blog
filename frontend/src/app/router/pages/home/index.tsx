@@ -1,9 +1,9 @@
-import Page from "@/app/components/page.tsx";
-import Subscribe from "@@/components/cards/subscribe";
-import MenuCard from "./components/menu-card.tsx";
+import Page from "@/app/components/basic/page.tsx";
+import Subscribe from "@/app/components/cards/subscribe/index.tsx";
+import MenuCard from "./menu.tsx";
 function HomePage() {
   return (
-    <Page heading={"Welcome!"}>     
+    <Page id="home" heading={"Welcome!"}>     
       <MenuCard />      
       <Subscribe />
     </Page>

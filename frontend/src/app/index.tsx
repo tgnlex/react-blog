@@ -1,13 +1,13 @@
+import { Component } from 'react'
 import Router from './router'
-import './style/root.css'
+import './style/app.css'
 
-function App() {
-
-  return (
-    /** Context goes here */
-    <Router />
-    /** Context ends here */
-  )
+class App extends Component {
+  render() {
+    return (
+      <Router />
+    )
+  }
 }
 
 export default App

@@ -1,15 +1,14 @@
 import { Outlet } from "react-router";
-import Header from "./header";
-import Navbar from "./navbar";
-
+import Header from "./components/header";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 function Layout() {
   return (
     <>
       <Header />
       <Navbar />
-      <div id="outlet">
-        <Outlet />
-      </div>
+      <Outlet />
+      <Footer />    
     </>
   )
 };
